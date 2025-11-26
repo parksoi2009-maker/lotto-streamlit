@@ -17,7 +17,7 @@ def draw_one_set():
   main_numbers = sorted(random.sample(range(1, 46), 6))
   remaining = [n for n in range(1, 46) if n not in main_numbers]
   bonus = random.choice(remaining)
-return main_numbers, bonus
+  return main_numbers, bonus
 
 
 if st.button("🎲 로또 번호 뽑기"):
